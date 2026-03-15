@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Training Script') {
             steps {
-                sh 'python3 src/train.py'
+                sh 'python3 src/model_training.py'
             }
         }
 
