@@ -15,11 +15,5 @@ pipeline {
             }
         }
 
-        stage('Archive Model') {
-            steps {
-                archiveArtifacts artifacts: '**/*.pkl', fingerprint: true
-            }
-        }
-
     }
 }
